@@ -7,4 +7,5 @@ RUN sudo apt-get install -y mysql-server
 RUN sudo apt-get install -y apache2
 RUN sudo apt-get install -y curl
 RUN sudo apt-get install -y systemd
-RUN mkdir webMNJ
+RUN mkdir webmnj
+CMD ["bin/bash"]
