@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  webmnj:
+    image: tharthril/mnj
+    command: ["sh", "-c","sleep 48h"]
+    container_name: buildandres
+    environment:
+      - cap-add=NET_ADMIN
+    volumes:
+      - ./docker/:/webmnj
+    expose:
+      - 8080:80
+      - 443:443
+      
