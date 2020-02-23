@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-RUN apt-get clear
+RUN apt-get clean
 RUN apt-get update && apt-get install -y apt-transport-https
 RUN apt-get install sudo
 RUN sudo apt-get -y upgrade
