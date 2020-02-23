@@ -7,10 +7,9 @@ RUN sudo apt-get install -y mysql-server
 RUN sudo apt-get install -y apache2 
 RUN sudo apt-get install -y curl 
 RUN sudo apt-get install -y systemd
-RUN sudo apt-get install -y  ufw 
+RUN sudo apt-get install -y ufw 
 RUN sudo apt-get install -y openssh-server
 RUN mkdir webmnj
 RUN sudo usermod -d /var/lib/mysql mysql
-RUN mkdir script
-COPY crearbbdd.sh  /script/crearbbdd.sh
+
 CMD ["bin/bash"]
